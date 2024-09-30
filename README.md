@@ -54,6 +54,8 @@ Access the Application: Open your web browser and go to http://localhost:8501.
 
  ![image](https://github.com/user-attachments/assets/21792af5-47f4-42d2-9fd7-d622aa7f8a0d)
 
+ Note: It takes 15-20 minutes to get results on website or localhost.
+
 
 
  
