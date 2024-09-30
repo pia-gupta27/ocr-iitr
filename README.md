@@ -1,5 +1,7 @@
 # ocr-iitr
 
+ Website: https://ocr-reader-colpali.streamlit.app/
+ 
  ![image](https://github.com/user-attachments/assets/3f8b3c37-c42a-4ea3-b773-8f4e66c7ec21)
 
 
