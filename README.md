@@ -22,8 +22,8 @@ This project is a web-based prototype that demonstrates the ability to perform O
 
 1. **Clone the Repository**:
    ```bash
-   git clone <your-github-repo-url>
-   cd <your-repo-directory>
+   git clone https://github.com/pia-gupta27/ocr-iitr
+   cd ocr-iitr
 
 2. **Create and Activate a Virtual Environment (optional)**:
    ```bash
