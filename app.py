@@ -50,4 +50,3 @@ if uploaded_file is not None:
         
         st.markdown(f"<div style='white-space: pre-wrap;'>{highlighted_text}</div>", unsafe_allow_html=True)
 
-

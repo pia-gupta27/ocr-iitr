@@ -1,4 +1,3 @@
-
 import torch
 from PIL import Image
 from transformers import AutoProcessor, Qwen2VLForConditionalGeneration
@@ -27,7 +26,7 @@ def extract_text(image_path):
     image = Image.open(image_path).convert("RGB")
 
     # Resize the image to reduce memory usage
-    image = image.resize((image.width // 2, image.height // 2))
+    image = image.resize((image.width // 4, image.height // 4))
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     colpali_model.to(device)
@@ -61,11 +60,10 @@ def extract_text(image_path):
 
     print("Generating OCR text using Qwen2-VL...")
     with torch.no_grad():
-        generated_ids = qwen_model.generate(**inputs, max_new_tokens=512)
+        generated_ids = qwen_model.generate(**inputs, max_new_tokens=256)
         output_text = qwen_processor.batch_decode(generated_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
 
     extracted_text = output_text[0]
     print("OCR text extracted:", extracted_text)
 
     return extracted_text
-
